@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript Scope of Function</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            //global variable
+            var b = 5
+            function myFunction() {
+                //local function
+                var a = 4
+                document.getElementById("demo"). innerHTML = b;
+            }
+            myFunction();
+            document.getElementById("demo1"). innerHTML = a;
+        </script>
+    </body>
+</html>
