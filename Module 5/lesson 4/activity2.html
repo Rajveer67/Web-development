@@ -2,6 +2,16 @@
 <html>
 <head></head>
 <body>
-    <h1></h1>
+    <h2>JavaScript Error Handling</h2>
+    <p id="error_messege"></p>
+
+    <script>
+        try  {
+            addalert("Welcome to Codingal!")
+        }
+        catch(error) {
+            document.getElementById("error_messege").innerHTML = error.message;
+        }
+    </script>
 </body>
 </html>
