@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <H2>JSON</H2>
+        <p id="json"></p>
+        <p id="js"></p>
+
+        <script>
+            var myObj = {
+                name: "Rajveer",
+                age: 11,
+                city: "Dhaka"
+            };
+
+            //converting to JSON
+            var myJSON = JSON.stringify(myObj);
+            document.getElementById("json").innerHTML = myJSON;
+
+            //converting back to javascript
+            var myJS = JSON.parse(myJSON);
+            document.getElementById("js").innerHTML = myJS. name + " is " + myJS.age + " years old and lives in " + myJS.city + " . ";
+        </script>
+    </body>
+</html>
