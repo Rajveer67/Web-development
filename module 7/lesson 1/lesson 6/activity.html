@@ -17,16 +17,16 @@
         </style>
     </head>
     <body>
-        <div>Click On the dice...</div>
-        <div id="dice" onclick = "stopstart()"></div>
+        <div>Click On the numbers...</div>
+        <div id="numbers" onclick = "stopstart()"></div>
 
         <script>
-            var dices = ['&#9856;', '&#9857;', '&#9858;', '&#9859;', '&#9860;', '&#9861;'];
+            var numbers = ['1, 2, 3, 4, 5, 6, 7, 8, 9, 10,;'];d
             var stopped = true;
 
             function change() {
                 var random = Math.floor(Math.random()*6);
-                document.getElementById("dice").innerHTML = dices [random];
+                document.getElementById("dice").innerHTML = numbers [random];
             }
             function stopstart() {
                 if (stopped) {
@@ -38,7 +38,7 @@
                 }
             }
             window.onload = function() {
-                dice = document.getElementById("dice");
+                numbers = document.getElementById("dice");
                 stopstart();
             }
         </script>
