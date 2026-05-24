@@ -32,3 +32,62 @@ body {
     color: aliceblue;
     text-align: center;
 }
+form {
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) ;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form h2 {
+    margin:0 0 10px 0;
+    color: #333333;
+    font-size: 24px;
+    text-align: center;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+input:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.15);
+    outline: none;
+}
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+button:hover {
+    background-color: #357abd;
+}
+button:active {
+    transform: scale(0.98);
+}
